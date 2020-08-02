@@ -135,22 +135,3 @@ ul li a:hover {
     padding-right: 20px;
 }
 
-@media all and (max-width: 960px) {
-    .wrapper{
-        width: 800px;
-    }
-    .img-logo{
-        padding-top: 50px;
-        width: 600px;
-    }
-    ul {
-        line-height: 100px;
-    }
-    ul li a {
-        font-size: 40px;
-    }
-    .sns {
-        width: 60px;
-        padding-right: 50px;
-    }
-}

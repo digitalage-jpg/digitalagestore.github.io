@@ -135,7 +135,7 @@ ul li a:hover {
     padding-right: 20px;
 }
 
-@media all and (min-width: 960px) {
+@media all and (max-width: 960px) {
     .wrapper{
         width: 800px;
     }

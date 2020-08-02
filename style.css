@@ -94,9 +94,12 @@ input, select {
 }
 
 h1{
-    color: #ffffff
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 .logo{
-    color: #ffffff
+    color: #ffffff;
+    font-size: 70px;
+    text-align: center
 }

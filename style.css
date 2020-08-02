@@ -99,5 +99,5 @@ h1{
 }
 
 .logo{
-    
+    filter: invert(100%);
 }

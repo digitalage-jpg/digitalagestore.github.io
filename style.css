@@ -17,6 +17,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    text-decoration: none;
 }
 
 body {
@@ -53,14 +54,14 @@ a {
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
-    color:#000;
+    color:#ffffff;
     text-decoration:none;
 }
 
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#000;
+    color:#ffffff;
     font-style:italic;
     font-weight:bold;
 }
@@ -102,7 +103,16 @@ h1{
     filter: invert(100%);
 }
 
-.menu{
+ul {
+    
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-weight: 200;
     font-size: 20px;

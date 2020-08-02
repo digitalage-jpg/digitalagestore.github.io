@@ -16,12 +16,12 @@ time, mark, audio, video {
     outline:0;
     font-size:100%;
     vertical-align:baseline;
-    background:transparent;
+    background:#303030;
     text-decoration: none;
 }
 
 body {
-    line-height:1;
+    line-height:3;
 }
 
 article,aside,details,figcaption,figure,
@@ -50,14 +50,14 @@ a {
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
-    color:#ffffff;
+    color:#000000;
     text-decoration:none;
 }
 
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#ffffff;
+    color:#000000;
     font-style:italic;
     font-weight:bold;
 }
@@ -100,12 +100,13 @@ h1{
 }
 
 nav {
+    display: inline-block;
     width: 100%;
     height: 100px;
 }
 
 ul {
-    
+    color: #ffffff;
 }
 
 ul li {

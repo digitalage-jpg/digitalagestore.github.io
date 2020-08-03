@@ -98,12 +98,18 @@ input, select {
 
 .img-logo {
     width: 200px;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
-h1{
-    font-family: Arial;
+h1 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 20px;
     color: #303030;
+    text-decoration: none;
+}
+h2 {
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 15px;
 }
 
 nav {
@@ -115,16 +121,42 @@ ul li {
     list-style: none;
     float: left;
     padding-left: 20px;
+    position: relative;
 }
 
 ul li a {
     text-decoration: none;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
+    color: #303030;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    line-height: 26px;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul li a{
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     color: #303030;
 }
 
 ul li a:hover {
     color: #2f9688
+}
+
+.wrapper2 {
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    width: auto;
 }

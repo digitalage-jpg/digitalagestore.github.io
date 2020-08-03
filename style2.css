@@ -16,7 +16,7 @@ time, mark, audio, video {
     outline:0;
     font-size:100%;
     vertical-align:baseline;
-    background:#303030;
+    background:#ffffff;
     text-decoration: none;
 }
 
@@ -92,39 +92,39 @@ input, select {
 
 .wrapper{
     margin: 0 auto;
-    margin-top: 100px;
-    width: 400px;
+    margin-top: 20px;
+    width: auto;
 }
 
 .img-logo {
-    width: 400px;
+    width: 200px;
+    padding-left: 20px;
 }
 
 h1{
     font-family: Arial;
-    color: #ffffff;
+    color: #303030;
 }
 
 nav {
-    width: 50%;
-    color: #ffffff;
+    width: 100%;
     padding-top: 10px;
-    line-height: 38px;
 }
 
 ul li {
     list-style: none;
+    float: left;
+    padding-left: 20px;
 }
 
 ul li a {
-    display: inline-block;
     text-decoration: none;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 16px;
-    color: #ffffff;
+    color: #303030;
 }
 
 ul li a:hover {
-    color: #f9ab40
+    color: #2f9688
 }

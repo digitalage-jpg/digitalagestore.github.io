@@ -1,0 +1,350 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+body {
+    line-height:3;
+}
+
+.contactus {
+    height: 100%;
+    overflow: hidden;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+.img-logo {
+    width: 200px;
+    padding-left: 0px;
+}
+
+.wrapper{
+    margin-top: 20px;
+    width: auto;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #303030;
+    text-decoration: none;
+}
+h2 {
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 15px;
+}
+h3 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 12px;
+    color: #303030;
+    text-decoration: none;
+}
+h4 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    color: #303030;
+    text-decoration: none;
+}
+
+h5 { 
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #303030;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    padding-top: 10px;
+    position: fixed;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    padding-left: 20px;
+    position: relative;
+
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #303030;
+}
+
+ul li a:hover {
+    color: #2f9688;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    line-height: 26px;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul li a{
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #303030;
+}
+
+.wrapper2 {
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.submenu {
+    padding: 0px;
+    background-color: lightgray;
+    margin-top: 7px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.submenu li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #303030;
+}
+
+.submenu li a:hover {
+    color: #2f9688
+}
+
+.noticeboard {
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    width: auto;
+}
+
+.wrapper3 {
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    width: auto;
+}
+
+.teamprofile {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.teamprofile li{
+    list-style: none;
+    display: inline-block;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.profilepic {
+    width: 250px;
+    height: 250px;
+}
+
+.profiledescrip li{
+    list-style: none;
+}
+
+.teamprofile li li a {
+    display: inline-block;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+
+    font-size: 12px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 300;
+}
+
+table td {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    font-size: 13px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 300;
+}
+
+#subj {
+    padding-right: 250px;
+    text-align: left;
+}
+
+.productswrapper {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.products{
+    list-style: none;
+    float: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.sample {
+    width: 280px;
+    height: 280px;
+}
+
+.nameandprice {
+    text-align: center;
+}
+
+.nameandprice a {
+    text-decoration: none;
+    color: black;
+}
+
+.item1 {
+    margin-top: 20px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.item1 li {
+    display: inline-block;
+    list-style: none;
+}
+
+.samplepage {
+    width: 1000px;
+    height: 1000px;
+}
+
+.item2 {
+    margin-left: 1100px;
+}
+
+.item2 a {
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #303030;
+}

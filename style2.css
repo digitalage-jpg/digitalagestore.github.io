@@ -24,6 +24,11 @@ body {
     line-height:3;
 }
 
+footer{
+    padding-top: 50px;
+}
+
+
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
@@ -128,6 +133,7 @@ h4 {
 nav {
     width: 100%;
     padding-top: 10px;
+    position: fixed;
 }
 
 ul li {
@@ -141,7 +147,7 @@ ul li {
 ul li a {
     text-decoration: none;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     color: #303030;
 }

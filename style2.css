@@ -135,6 +135,7 @@ ul li {
     float: left;
     padding-left: 20px;
     position: relative;
+
 }
 
 ul li a {
@@ -145,12 +146,15 @@ ul li a {
     color: #303030;
 }
 
+ul li a:hover {
+    color: #2f9688;
+}
+
 ul li ul {
     display: none;
     position: absolute;
     line-height: 26px;
 }
-
 
 ul li:hover ul {
     display: block;
@@ -162,10 +166,6 @@ ul li ul li a{
     font-weight: 300;
     font-size: 14px;
     color: #303030;
-}
-
-ul li a:hover {
-    color: #2f9688
 }
 
 .wrapper2 {
@@ -204,8 +204,8 @@ ul li a:hover {
 
 .noticeboard {
     margin-top: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
     width: auto;
 }
 
@@ -243,4 +243,37 @@ ul li a:hover {
 
 .teamprofile li li a {
     display: inline-block;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+
+    font-size: 12px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 300;
+}
+
+table td {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    font-size: 13px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 300;
+}
+
+#subj {
+    padding-right: 250px;
+    text-align: left;
 }

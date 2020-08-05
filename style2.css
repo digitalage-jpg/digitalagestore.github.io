@@ -320,3 +320,15 @@ table td {
     text-decoration: none;
     color: black;
 }
+
+.profiledescrip a {
+    font-size: 18px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 400;
+}
+
+.profiledescrip span {
+    font-size: 14px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 300;
+}

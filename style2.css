@@ -16,7 +16,7 @@ time, mark, audio, video {
     outline:0;
     font-size:100%;
     vertical-align:baseline;
-    background:#ffffff;
+    background: transparent;
     text-decoration: none;
 }
 
@@ -90,15 +90,14 @@ input, select {
     vertical-align:middle;
 }
 
-.wrapper{
-    margin: 0 auto;
-    margin-top: 20px;
-    width: auto;
-}
-
 .img-logo {
     width: 200px;
     padding-left: 0px;
+}
+
+.wrapper{
+    margin-top: 20px;
+    width: auto;
 }
 
 h1 {
@@ -110,6 +109,20 @@ h1 {
 h2 {
     font-family: 'IBM Plex Sans Condensed';
     font-size: 15px;
+}
+h3 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 12px;
+    color: #303030;
+    text-decoration: none;
+}
+h4 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    color: #303030;
+    text-decoration: none;
 }
 
 nav {
@@ -158,5 +171,74 @@ ul li a:hover {
     margin-top: 50px;
     margin-left: 400px;
     margin-right: 400px;
+    margin-bottom: 20px;
     width: auto;
+}
+
+.submenu {
+    padding: 0px;
+    background-color: lightgray;
+    margin-top: 7px;
+
+}
+
+.submenu li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #303030;
+}
+
+.submenu li a:hover {
+    color: #2f9688
+}
+
+.noticeboard {
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: auto;
+}
+
+.wrapper3 {
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    width: auto;
+}
+
+.teamprofile {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.teamprofile li{
+    list-style: none;
+    display: inline-block;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.profilepic {
+    width: 250px;
+    height: 250px;
+}
+
+.profiledescrip li{
+    list-style: none;
+}
+
+.teamprofile li li a {
+    display: inline-block;
 }

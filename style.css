@@ -139,3 +139,18 @@ ul li a:hover {
     padding-right: 20px;
 }
 
+.paylist {
+    margin-top: 20px;
+    list-style: none;
+    display: inline-block;
+}
+
+.paylist li {
+    float: left;
+    padding-right: 10px;
+}
+
+.payicon {
+    width: auto;
+}
+

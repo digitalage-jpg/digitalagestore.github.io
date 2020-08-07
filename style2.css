@@ -249,6 +249,21 @@ ul li ul li a{
     width: auto;
 }
 
+@media all and (max-width: 1260px){
+    .wrapper3 {
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+    }
+    .noticeboard {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+    }
+}
+
 .wrapper4 {
     margin-top: 50px;
     margin-left: 100px;

@@ -35,11 +35,6 @@ body {
     display: inline-block;
 }
 
-.contactus {
-    height: 100%;
-    overflow: hidden;
-}
-
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
@@ -254,6 +249,14 @@ ul li ul li a{
     width: auto;
 }
 
+.wrapper4 {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    width: auto;
+}
+
 .teamprofile {
     margin-left: 100px;
     margin-right: 100px;
@@ -370,5 +373,5 @@ table td {
 }
 
 .lookbookzoom:hover {
-    
+
 }

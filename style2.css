@@ -413,3 +413,38 @@ table td {
 .lookbookzoom:hover {
 
 }
+
+.carttablewrapper {
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    width: auto;
+}
+
+.carttable {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.carttable th {
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+
+    font-size: 12px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 300;
+}
+
+.carttable td {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    font-size: 13px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 300;
+}

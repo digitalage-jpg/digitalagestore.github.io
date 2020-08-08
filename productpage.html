@@ -27,13 +27,31 @@
                     </li>
                 </ul>
             </nav>
+
+            <!--APICAR-->
+
             <div class="shoppingicon">
                 <ul>
                     <li>
-                        <a href="index.html"><img class="img-logo" src="pictures/carticon.png" alt="shopping cart"></a>
+                        <div id="apicart-cart-dropdown"></div>
+                        <div id="apicart"></div>
                     </li>
                 </ul>
             </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
+            <script>
+                Apicart
+                .setDevEnv() // Switch to dev environment
+                .configure({
+                    store: new Apicart.Store({
+                    token: "?pSv?qVGRR8LiHW!wLfmA48_xBm98yfvOS664T53MQXn3vQpFLA!T0qm8hWuuJ1q"
+                    })
+                })
+                .initVueBundle();
+            </script>
+            <!--APICART-->
+
         </div>
         <br>
         <div class="submenu">
@@ -53,25 +71,18 @@
             </li>
         </div>
         <div class="item2" style="position: fixed; top: 150px; width: 400px;">
-            <a>NOKIA PHONE</a> <br>
-            <h5>$30.00</h5>
-            <p>quantity</p>
-            <p>size</p>
-            <p>BUY NOW</p>
-            <p>ADD TO CART</p>
-            <p style="font-size: 8; line-height: 1.5;">Instruction <br>
-                Material: Cotton 100% <br>
-                Color: WHITE <br>
-                Size: M, L, XL, OVER FREE<br>
-                Manufacturer: some sompanyy<br>
-                Made in Korea<br>
+            <a>AEROSPACE choker</a> <br>
+            <h5>$19.00</h5>
+
+            <button data-apicart-add-item="https://cdn.apicart.dev/external/72dycyf2gbov65koyfv0joadrfidiigz/data/NE/NE001.json">Buy</button>
+
+
+
+
+            <p style="font-size: 8; line-height: 1.5;">DESCRIPTION <br>
+                the most lightweight chain metal choker that will ever grace your neck. feels like you're not even wearing it. adjustable. available in two sizes.
+                100% ALUMINUM METAL FROM KOREA.<br>
                 <br>
-                취급시 주의사항<br>
-                1. 표백성(염소계) 세제 사용 금지<br>
-                2. 30도 이하 저온의 물로 중성세제로 단독 손세탁 권장<br>
-                3. 기계 건조기 절대 사용 불가<br>
-                4. 서늘한 곳에서 자연건조<br>
-                5. 세탁 시 이염 방지를 위해 타 제품 및 타 컬러 제품과 함께 세탁 금지<br>
                 Size guide<br>
                 Shipping & Return</p>
         </div>

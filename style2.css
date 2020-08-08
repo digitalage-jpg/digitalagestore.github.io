@@ -206,10 +206,9 @@ ul li ul li a{
 }
 
 .shoppingicon ul li {
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     position: relative;
-    margin-right: 10px;
-    padding-right: 10px;
     list-style: none;
     float: right;
 }

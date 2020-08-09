@@ -49,8 +49,6 @@ function onLoadCartNumbers() {
 }
 
 function cartNumbers(choker) {
-    console.log("the product clicked is", choker)
-
     let productNumber = localStorage.getItem('cartNumbers');
 
     productNumber = parseInt(productNumber);
@@ -63,6 +61,13 @@ function cartNumbers(choker) {
         localStorage.setItem('cartNumbers', 1);
         document.querySelector('.cartnum span').textContent = 1;
     }
+
+    setItem(choker);
+}
+
+function setItem(choker) {
+    console.log("Inside of my setItem function");
+    console.log("My product is", choker);
 }
 
 onLoadCartNumbers();

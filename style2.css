@@ -216,6 +216,7 @@ ul li ul li a{
 .shoppingicon ul li img {
     width: 25px;
     height: 25px;
+    padding-right: 15px;
 }
 
 .wrapper2 {
@@ -415,8 +416,8 @@ table td {
 
 .carttablewrapper {
     margin-top: 10px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 150px;
+    margin-right: 150px;
     width: auto;
 }
 
@@ -440,10 +441,26 @@ table td {
 .carttable td {
     text-align: center;
     border-bottom: 1px solid lightgrey;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
 
     font-size: 13px;
     font-family: 'IBM Plex Sans Condensed';
     font-weight: 300;
+}
+
+.cartimg {
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+#productname {
+    padding-right: 50px;
+    text-align: left;
+}
+
+.cart-qty {
+    width: 30px;
+    height: 20px;
 }

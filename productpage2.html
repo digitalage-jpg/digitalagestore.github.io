@@ -5,7 +5,8 @@
         <title>DigitalAge Store</title>
         <link rel="icon" type="image/icon type" href="pictures/favicon.png"/>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="style3.css">
+        <script src="productpage2.js" async></script>
     </head>
     <body>
         <div class="wrapper">
@@ -19,7 +20,7 @@
                     <li><a href="contactus.html">CONTACT US</a> </li>
                     <li><a href="community.html">COMMUNITY</a>
                         <ul>
-                            <li><a href="community.html">NOTICE</a> </li>
+                            <li><a href="#">NOTICE</a> </li>
                             <li><a href="https://www.instagram.com/digitalage.jpg">INSTAGRAM</a> </li>
                             <li><a href="#">FACEBOOK</a> </li>
                             <li><a href="#">FAQ</a> </li>
@@ -36,43 +37,48 @@
                 </ul>
             </div>
         </div>
-
-
         <br>
-        
         <div class="submenu">
-            <li><a href="onlinestore.html" style="color: teal;">ALL</a> </li>
+            <li><a href="#">ALL</a> </li>
             <li><a href="#">OUTER</a> </li>
             <li><a href="#">TOP</a> </li>
             <li><a href="#">BOTTOM</a> </li>
             <li><a href="#">ACCESSCORIES</a> </li>
         </div>
 
-        <div class="productswrapper">
-            <li class="products"><a href="productpage.html"><img class ="sample" src="products/aerospacechoker.jpg" alt="sample1"></a>
-                <div class="nameandprice">
-                    <h5><a href="productpage.html">AEROSPACE choker</a></h5>
-                    <h5>$19.00</h5>
-                </div>
+        <div class="item1">
+            <li>
+                <img class="samplepage" src="products/impulsebracelet.jpg" alt="sample1">
             </li>
-            <li class="products"><a href="productpage2.html"><img class= "sample" src="products/impulsebracelet.jpg" alt="sample2"></a>
-                <div class="nameandprice">
-                    <h5><a href="#">IMPULSE chain bracelet</a></h5>
-                    <h5>$25.00</h5>
-                </div>
+                <img class="samplepage" src="products/impulsebracelet.jpg" alt="sample1">
+            <li>
             </li>
         </div>
+        <div class="item2" style="position: fixed; top: 150px; width: 400px;">
+            <a>IMPULSE Bracelet</a> <br>
+            <h5>$25.00</h5>
 
-        <br>
+            <select id="size">
+                <option value="medium">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+            </select> <br>
 
-        <div>
-            <footer class="footer">
-                <li><h3 style="font-weight: 900;">CUSTOMER CARE</h3></li> 
-                <li><h3> &ensp;&ensp;(123)456-7890 &ensp;|&ensp; digitalage.jpg@gmail.com &ensp;</h3></li>
-                <li><h3> &ensp;&ensp; &#169; DIGITALAGE&ensp;|&ensp;All rights reserved.</h3></li>
-            </footer>
+            <button class="addtocart-btn">ADD TO CART</button><br>
+            <button class="buynow-btn">BUY NOW</button>
+
+            <p style="font-size: 8; line-height: 1.5;">DESCRIPTION <br>
+                polished, darkened silver chain bracelet handmade for everyday wear. finished with a toggle clasp. available in three sizes.
+                materials are made in Korea. bracelet hand assembled by us in the US.<br>
+                <br>
+                Size guide<br>
+                Shipping & Return</p>
         </div>
         
     </body>
+
+    <footer class="wrapper2" style="text-align: center;">
+        <h3>CUSTOMER CARE &emsp; &ensp;(123)456-7890 &ensp;|&ensp; digitalage.jpg@gmail.com &ensp;|&ensp; some other information &ensp;|&ensp; &#169; DIGITALAGE &ensp;|&ensp; All rights reserved.</h3>
+    </footer>
 
 </html>

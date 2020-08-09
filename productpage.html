@@ -6,6 +6,7 @@
         <link rel="icon" type="image/icon type" href="pictures/favicon.png"/>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style3.css">
+        <script src="productpage1.js" async></script>
     </head>
     <body>
         <div class="wrapper">
@@ -27,31 +28,14 @@
                     </li>
                 </ul>
             </nav>
-
-            <!--APICAR-->
-
             <div class="shoppingicon">
                 <ul>
-                    <li>
-                        <div id="apicart-cart-dropdown"></div>
-                        <div id="apicart"></div>
+                    <li class="cartnum">
+                        <a href="shoppingcart.html"><img class="img-logo" src="pictures/carticon.png" alt="shopping cart"></a>
+                        <span>0</span>
                     </li>
                 </ul>
             </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
-            <script>
-                Apicart
-                .setDevEnv() // Switch to dev environment
-                .configure({
-                    store: new Apicart.Store({
-                    token: "?pSv?qVGRR8LiHW!wLfmA48_xBm98yfvOS664T53MQXn3vQpFLA!T0qm8hWuuJ1q"
-                    })
-                })
-                .initVueBundle();
-            </script>
-            <!--APICART-->
-
         </div>
         <br>
         <div class="submenu">
@@ -64,20 +48,23 @@
 
         <div class="item1">
             <li>
-                <img class="samplepage" src="products/sample1.png" alt="sample1">
+                <img class="samplepage" src="products/aerospacechoker.jpg" alt="sample1">
             </li>
-                <img class="samplepage" src="products/sample1.png" alt="sample1">
+                <img class="samplepage" src="products/aerospacechoker.jpg" alt="sample1">
             <li>
             </li>
         </div>
         <div class="item2" style="position: fixed; top: 150px; width: 400px;">
             <a>AEROSPACE choker</a> <br>
-            <h5>$19.00</h5>
+            <h5>$19.00 - $22.00</h5>
 
-            <button data-apicart-add-item="https://cdn.apicart.dev/external/72dycyf2gbov65koyfv0joadrfidiigz/data/NE/NE001.json">Buy</button>
+            <select id="size">
+                <option value="medium">M</option>
+                <option value="large">L</option>
+            </select> <br>
 
-
-
+            <button class="addtocart-btn">ADD TO CART</button><br>
+            <button class="buynow-btn">BUY NOW</button>
 
             <p style="font-size: 8; line-height: 1.5;">DESCRIPTION <br>
                 the most lightweight chain metal choker that will ever grace your neck. feels like you're not even wearing it. adjustable. available in two sizes.

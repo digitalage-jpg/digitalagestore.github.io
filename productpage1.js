@@ -20,12 +20,17 @@ let choker = [
 let size = document.getElementById('size');
 var sizeValue = size.options[size.selectedIndex].value;
 
+console.log(sizeValue);
+
 for (var i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', ()=> {
-        if(size = "medium"){
+        if(sizeValue = "null"){
+            alert("Please select a size");
+        }
+        else if(sizeValue = "large") {
             cartNumbers(choker[0]);
         }
-        else if(size = "large") {
+        else if(sizeValue = "large") {
             cartNumbers(choker[1]);
         }
     })

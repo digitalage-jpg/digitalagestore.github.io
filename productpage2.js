@@ -25,14 +25,27 @@ let bracelet = [
 ]
 
 let size = document.getElementById('size');
-if(size == 'M'){
 
+function getSize(size) {
+    sizeValue = size.options[size.selectedIndex].value;
+    return sizeValue;
 }
-
 
 for (var i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', ()=> {
-        cartNumbers(bracelet[i]);
+        getSize(size);
+        if(sizeValue == "null"){
+            alert("Please select a size");
+        }
+        else if (sizeValue == "small"){
+            cartNumbers(bracelet[0]);
+        }
+        else if (sizeValue == "medium") {
+            cartNumbers(bracelet[1]);
+        }
+        else if (sizeValue == "large") {
+            cartNumbers(bracelet[2]);
+        }
     })
 }
 

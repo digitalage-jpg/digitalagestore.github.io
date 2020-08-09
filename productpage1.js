@@ -18,23 +18,27 @@ let choker = [
 ]
 
 let size = document.getElementById('size');
-var sizeValue = size.options[size.selectedIndex].value;
 
-console.log(sizeValue);
+function getSize(size) {
+    sizeValue = size.options[size.selectedIndex].value;
+    return sizeValue;
+}
 
 for (var i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', ()=> {
-        if(sizeValue = "null"){
+        getSize(size);
+        if(sizeValue == "null"){
             alert("Please select a size");
         }
-        else if(sizeValue = "large") {
+        else if (sizeValue == "medium") {
             cartNumbers(choker[0]);
         }
-        else if(sizeValue = "large") {
+        else if (sizeValue == "large") {
             cartNumbers(choker[1]);
         }
     })
 }
+
 
 function onLoadCartNumbers() {
     let productNumber = localStorage.getItem('cartNumbers');

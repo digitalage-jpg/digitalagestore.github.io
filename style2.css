@@ -421,12 +421,30 @@ table td {
     width: auto;
 }
 
-.carttable {
+.carttabletitle {
     margin: auto;
     border-collapse: collapse;
 }
 
-.carttable th {
+.carttabletitle th {
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 0px solid lightgrey;
+
+    font-size: 12px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 500;
+}
+
+.carttable {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.carttable .cartrow th {
     text-align: center;
     padding-right: 25px;
     padding-left: 25px;
@@ -438,7 +456,7 @@ table td {
     font-weight: 300;
 }
 
-.carttable td {
+.carttable .cartrow td {
     text-align: center;
     border-bottom: 1px solid lightgrey;
     padding-right: 10px;
@@ -463,4 +481,14 @@ table td {
 .cart-qty {
     width: 30px;
     height: 20px;
+}
+
+.totalprice {
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    width: auto;
+    text-align: center; 
+    padding-top: 50px;
 }

@@ -32,9 +32,11 @@ for (var i=0; i < carts.length; i++) {
         }
         else if (sizeValue == "medium") {
             cartNumbers(choker[0]);
+            totalCost(choker[0]);
         }
         else if (sizeValue == "large") {
             cartNumbers(choker[1]);
+            totalCost(choker[1]);
         }
     })
 }
@@ -66,8 +68,41 @@ function cartNumbers(choker) {
 }
 
 function setItem(choker) {
-    console.log("Inside of my setItem function");
-    console.log("My product is", choker);
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+
+    if(cartItems != null){
+        if(cartItems[choker.tag] == undefined) {
+            cartItems = {
+                ...cartItems,
+                [choker.tag]: choker
+            }
+        }
+        cartItems[choker.tag].inCart += 1
+    }
+    else{
+        choker.inCart = 1;
+        cartItems = {
+            [choker.tag]: choker
+        }
+    }
+    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+}
+
+function totalCost(choker) {
+    //console.log("The product price is: ", choker.price)
+    let cartCost = localStorage.getItem('totalCost');
+    
+    console.log("My cartCost is:", cartCost);
+    console.log(typeof cartCost);
+
+    if(cartCost != null) {
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + choker.price);
+    }
+    else{
+        localStorage.setItem("totalCost", choker.price);
+    }
 }
 
 onLoadCartNumbers();

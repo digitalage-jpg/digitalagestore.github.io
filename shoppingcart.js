@@ -12,12 +12,12 @@ function displayCart() {
             carttable.innerHTML += `
             <table class="carttable">
                 <tr class="cartrow">
-                    <th>${item.size}</th>
+                    <th class="itemsize">${item.size}</th>
                     <th><img class="cartimg" src="producticon/${item.tag}.jpg"></th>
-                    <th>${item.name}</th>
-                    <th>$${item.price}.00</th>
+                    <th class="productname">${item.name}</th>
+                    <th class="cart-price">$${item.price}.00</th>
                     <th><input class="cart-qty" type="number" value="${item.inCart}"></th>
-                    <th>$${item.inCart * item.price}.00</th>
+                    <th class="subtotal">$${item.inCart * item.price}.00</th>
                     <th><button class="btn-danger">REMOVE</button></th>
                 </tr>
             </table>
@@ -26,7 +26,7 @@ function displayCart() {
 
         totalprice.innerHTML = `
         <div class="totalprice">
-            <h2>TOTAL:$${cartCost}.00</h2>
+            <h2>TOTAL:$ ${cartCost}.00</h2>
         </div>
         `;
     }
@@ -40,7 +40,11 @@ for(var i = 0; i < removeCartItemButtons.length; i++){
     var button = removeCartItemButtons[i]
     button.addEventListener('click', function(event) {
         var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
+        //buttonClicked.parentElement.parentElement.remove();
+
+        JSON.parse(localStorage.getItem("productsInCart")).map(data=> {
+
+        })
 
     })
 }

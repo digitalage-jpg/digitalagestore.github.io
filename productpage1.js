@@ -92,9 +92,7 @@ function setItem(choker) {
 function totalCost(choker) {
     //console.log("The product price is: ", choker.price)
     let cartCost = localStorage.getItem('totalCost');
-    
-    console.log("My cartCost is:", cartCost);
-    console.log(typeof cartCost);
+
 
     if(cartCost != null) {
         cartCost = parseInt(cartCost);

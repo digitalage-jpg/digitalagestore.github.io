@@ -345,6 +345,7 @@ table td {
 .item1 {
     margin-top: 20px;
     margin-left: 40px;
+    width: 70%;
     display: inline-block;
 }
 
@@ -355,11 +356,13 @@ table td {
 
 .samplepage {
     width: 1000px;
-    height: 1000px;
 }
 
 .item2 {
     margin-left: 1100px;
+    width: 30%;
+    position: fixed; 
+    top: 150px; 
 }
 
 .item2 a {
@@ -368,4 +371,40 @@ table td {
     font-weight: 400;
     font-size: 18px;
     color: #303030;
+}
+
+@media all and (max-width: 1460px) {
+    .samplepage {
+        width: 800px;
+    }
+    .item2 {
+        margin-left: 880px;
+        width: 30%;
+        position: fixed; 
+        top: 150px; 
+    }
+}
+
+@media all and (max-width: 1060px) {
+    .samplepage {
+        width: 500px;
+    }
+    .item2 {
+        margin-left: 580px;
+        width: 30%;
+        position: fixed; 
+        top: 150px; 
+    }
+}
+
+@media all and (max-width: 900px) {
+    .samplepage {
+        width: 300px;
+    }
+    .item2 {
+        margin-left: 380px;
+        width: 40%;
+        position: fixed; 
+        top: 150px; 
+    }
 }

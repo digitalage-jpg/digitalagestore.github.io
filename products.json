@@ -1,0 +1,36 @@
+[{
+    "name": "Impulse Bracelet",
+    "tag": "impulsebracelet-s",
+    "size": "S",
+    "price": 25,
+    "inCart": 0
+},
+{
+    "name": "Impulse Bracelet",
+    "tag": "impulsebracelet-m",
+    "size": "M",
+    "price": 25,
+    "inCart": 0
+},
+{
+    "name": "Impulse Bracelet",
+    "tag": "impulsebracelet-l",
+    "size": "L",
+    "price": 25,
+    "inCart": 0
+},
+{
+    "name": "Aerospace Choker",
+    "tag": "aerospacechoker-m",
+    "size": "M",
+    "price": 19,
+    "inCart": 0
+},
+{
+    "name": "Aerospace Choker",
+    "tag": "aerospacechoker-l",
+    "size": "L",
+    "price": 22,
+    "inCart": 0
+}
+]

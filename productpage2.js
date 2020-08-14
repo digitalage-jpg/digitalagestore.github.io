@@ -2,22 +2,22 @@ let carts = document.getElementsByClassName('addtocart-btn');
 
 let bracelet = [
     {
-        name: 'Impulse Braclet',
-        tag: 'impulsebraclet-s',
+        name: 'Impulse Bracelet',
+        tag: 'impulsebracelet-s',
         size: 'S',
         price: 25,
         inCart: 0
     },
     {
-        name: 'Impulse Braclet',
-        tag: 'impulsebraclet-m',
+        name: 'Impulse Bracelet',
+        tag: 'impulsebracelet-m',
         size: 'M',
         price: 25,
         inCart: 0
     },
     {
-        name: 'Impulse Braclet',
-        tag: 'impulsebraclet-l',
+        name: 'Impulse Bracelet',
+        tag: 'impulsebracelet-l',
         size: 'L',
         price: 25,
         inCart: 0
@@ -61,7 +61,6 @@ function onLoadCartNumbers() {
 }
 
 function cartNumbers(bracelet) {
-    console.log("the product clicked is", bracelet)
 
     let productNumber = localStorage.getItem('cartNumbers');
 
@@ -102,11 +101,7 @@ function setItem(bracelet) {
 }
 
 function totalCost(bracelet) {
-    //console.log("The product price is: ", bracelet.price)
     let cartCost = localStorage.getItem('totalCost');
-    
-    console.log("My cartCost is:", cartCost);
-    console.log(typeof cartCost);
 
     if(cartCost != null) {
         cartCost = parseInt(cartCost);

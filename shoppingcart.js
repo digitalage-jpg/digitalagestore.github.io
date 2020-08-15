@@ -108,7 +108,7 @@ var removeCartItemButtons = document.getElementsByClassName('btn-danger')
 for(var i = 0; i < removeCartItemButtons.length; i++){
     var button = removeCartItemButtons[i];
     button.addEventListener('click', function(event) {
-        var buttonClicked = event.target
+        //var buttonClicked = event.target
 
         let cartItems = localStorage.getItem("productsInCart");
         cartItems = JSON.parse(cartItems);

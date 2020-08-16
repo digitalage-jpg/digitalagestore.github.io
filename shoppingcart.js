@@ -110,21 +110,22 @@ for(var i = 0; i < removeCartItemButtons.length; i++){
     button.addEventListener('click', function(event) {
         //var buttonClicked = event.target
 
-        let cartItems = localStorage.getItem("productsInCart");
-        cartItems = JSON.parse(cartItems);
+        var cartItems = JSON.parse(localStorage.getItem("productsInCart"));
+        console.log(cartItems);
 
-        Object.values(cartItems).map(item => {
-            item.inCart = 0;
-            localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+        cartItems.splice(1,1);
+        localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+
+
+        // Object.values(cartItems).map(item => {
+        //     item.inCart = 0;
             
-            cartNumbers(); //updates the no. of items in cart
-            onLoadCartNumbers(); //updates the cart icon
-            totalCost(); //updates the total cost
-
-            localStorage.removeItem("productsInCart")
-        });
+        //     cartNumbers(); //updates the no. of items in cart
+        //     onLoadCartNumbers(); //updates the cart icon
+        //     totalCost(); //updates the total cost
+        // });
 
         //buttonClicked.parentElement.parentElement.remove();
-        location.reload()
+        //location.reload()
     })
 }

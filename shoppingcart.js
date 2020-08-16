@@ -110,10 +110,11 @@ for(var i = 0; i < removeCartItemButtons.length; i++){
     button.addEventListener('click', function(event) {
         //var buttonClicked = event.target
 
-        var cartItems = JSON.parse(localStorage.getItem("productsInCart"));
-        console.log(cartItems);
+        var cartItems = localStorage.getItem("productsInCart")
+        var cartItems = JSON.parse(cartItems);
 
-        cartItems.splice(1,1);
+        let index = cartItems.indexOf(i)
+        cartItems.splice(index,1);
         localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 
 

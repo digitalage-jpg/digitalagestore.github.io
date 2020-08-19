@@ -130,3 +130,21 @@ for(var i = 0; i < removeCartItemButtons.length; i++){
         //location.reload()
     })
 }
+
+var checkoutButton = document.getElementsByClassName('checkout')
+for(var i = 0; i < checkoutButton.length; i++){
+    var button = checkoutButton[i];
+    button.addEventListener('click', ()=> {
+
+        let itemsInCart = localStorage.getItem("cartNumbers");
+        console.log(itemsInCart);
+        if(itemsInCart = "null"){
+            alert("Nothing in Cart");
+        }
+        else {
+            console.log("CHECKOUT PRESSED");
+            //window.location.href = "checkout.html"
+        }
+
+    });
+}

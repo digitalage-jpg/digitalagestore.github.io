@@ -199,186 +199,188 @@ ul li a:hover {
 }
 
 .content {
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
 .content .copyright {
-    position: relative;
-    text-decoration: none;
-    font-family: Arial;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 30px;
-    color: white;
-    padding-left: 10px;
+  display: inline-flex;
+  position: relative;
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: white;
+  padding-left: 15px;
   }
 
 .content .glitch {
-    position: relative;
-    text-decoration: none;
-    font-family: Arial;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 70px;
-    color: white;
+  display: inline-flex;
+  position: relative;
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 70px;
+  color: white;
 }
 
 .content .glitch::before,
 .content .glitch::after {
-    position: absolute;
-    content: attr(data-text);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #303030;
-    color: white;
-    overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #303030;
+  color: white;
+  overflow: hidden;
 }
 
 .content .glitch::before {
-    left: 8px;
-    text-shadow: -4px 0 red;
-    animation: glitch-1 2s 0s linear reverse infinite;
+  left: 8px;
+  text-shadow: -4px 0 red;
+  animation: glitch-1 2s 0s linear reverse infinite;
 }
 
 .content .glitch::after {
-    left: -8px;
-    text-shadow:  -4px 0 blue;
-    animation: glitch-2 2s 0s linear reverse infinite;
+  left: -8px;
+  text-shadow:  -4px 0 blue;
+  animation: glitch-2 2s 0s linear reverse infinite;
 }
 
 @keyframes glitch-1 {
-    0% {
-      clip: rect(660px, 350px, 701px, 0px);
-    }
-    5% {
-      clip: rect(117px, 350px, 294px, 0px);
-    }
-    10% {
-      clip: rect(240px, 350px, 566px, 0px);
-    }
-    15% {
-      clip: rect(87px, 350px, 182px, 0px);
-    }
-    20% {
-      clip: rect(680px, 350px, 761px, 0px);
-    }
-    25% {
-      clip: rect(334px, 350px, 514px, 0px);
-    }
-    30% {
-      clip: rect(233px, 350px, 74px, 0px);
-    }
-    35% {
-      clip: rect(76px, 350px, 107px, 0px);
-    }
-    40% {
-      clip: rect(359px, 350px, 130px, 0px);
-    }
-    45% {
-      clip: rect(129px, 350px, 584px, 0px);
-    }
-    50% {
-      clip: rect(422px, 350px, 767px, 0px);
-    }
-    55% {
-      clip: rect(67px, 350px, 162px, 0px);
-    }
-    60% {
-      clip: rect(210px, 350px, 305px, 0px);
-    }
-    65% {
-      clip: rect(678px, 350px, 715px, 0px);
-    }
-    70% {
-      clip: rect(260px, 350px, 413px, 0px);
-    }
-    75% {
-      clip: rect(15px, 350px, 175px, 0px);
-    }
-    80% {
-      clip: rect(66px, 350px, 139px, 0px);
-    }
-    85% {
-      clip: rect(280px, 350px, 473px, 0px);
-    }
-    90% {
-      clip: rect(636px, 350px, 728px, 0px);
-    }
-    95% {
-      clip: rect(68px, 350px, 203px, 0px);
-    }
-    100% {
-      clip: rect(14px, 350px, 100px, 0px);
-    }
+  0% {
+    clip: rect(660px, 350px, 701px, 0px);
   }
+  5% {
+    clip: rect(117px, 350px, 294px, 0px);
+  }
+  10% {
+    clip: rect(240px, 350px, 566px, 0px);
+  }
+  15% {
+    clip: rect(87px, 350px, 182px, 0px);
+  }
+  20% {
+    clip: rect(680px, 350px, 761px, 0px);
+  }
+  25% {
+    clip: rect(334px, 350px, 514px, 0px);
+  }
+  30% {
+    clip: rect(233px, 350px, 74px, 0px);
+  }
+  35% {
+    clip: rect(76px, 350px, 107px, 0px);
+  }
+  40% {
+    clip: rect(359px, 350px, 130px, 0px);
+  }
+  45% {
+    clip: rect(129px, 350px, 584px, 0px);
+  }
+  50% {
+    clip: rect(422px, 350px, 767px, 0px);
+  }
+  55% {
+    clip: rect(67px, 350px, 162px, 0px);
+  }
+  60% {
+    clip: rect(210px, 350px, 305px, 0px);
+  }
+  65% {
+    clip: rect(678px, 350px, 715px, 0px);
+  }
+  70% {
+    clip: rect(260px, 350px, 413px, 0px);
+  }
+  75% {
+    clip: rect(15px, 350px, 175px, 0px);
+  }
+  80% {
+    clip: rect(66px, 350px, 139px, 0px);
+  }
+  85% {
+    clip: rect(280px, 350px, 473px, 0px);
+  }
+  90% {
+    clip: rect(636px, 350px, 728px, 0px);
+  }
+  95% {
+    clip: rect(68px, 350px, 203px, 0px);
+  }
+  100% {
+    clip: rect(14px, 350px, 100px, 0px);
+  }
+}
 @keyframes glitch-2 {
-    0% {
-      clip: rect(229px, 350px, 336px, 0px);
-    }
-    5% {
-      clip: rect(636px, 350px, 740px, 0px);
-    }
-    10% {
-      clip: rect(285px, 350px, 366px, 0px);
-    }
-    15% {
-      clip: rect(191px, 350px, 291px, 0px);
-    }
-    20% {
-      clip: rect(248px, 350px, 338px, 0px);
-    }
-    25% {
-      clip: rect(638px, 350px, 760px, 0px);
-    }
-    30% {
-      clip: rect(269px, 350px, 554px, 0px);
-    }
-    35% {
-      clip: rect(198px, 350px, 71px, 0px);
-    }
-    40% {
-      clip: rect(186px, 350px, 434px, 0px);
-    }
-    45% {
-      clip: rect(234px, 350px, 243px, 0px);
-    }
-    50% {
-      clip: rect(602px, 350px, 780px, 0px);
-    }
-    55% {
-      clip: rect(119px, 350px, 544px, 0px);
-    }
-    60% {
-      clip: rect(106px, 350px, 199px, 0px);
-    }
-    65% {
-      clip: rect(161px, 350px, 274px, 0px);
-    }
-    70% {
-      clip: rect(120px, 350px, 578px, 0px);
-    }
-    75% {
-      clip: rect(263px, 350px, 479px, 0px);
-    }
-    80% {
-      clip: rect(78px, 350px, 252px, 0px);
-    }
-    85% {
-      clip: rect(635px, 350px, 739px, 0px);
-    }
-    90% {
-      clip: rect(67px, 350px, 470px, 0px);
-    }
-    95% {
-      clip: rect(71px, 350px, 503px, 0px);
-    }
-    100% {
-      clip: rect(183px, 350px, 240px, 0px);
-    }
+  0% {
+    clip: rect(229px, 350px, 336px, 0px);
   }
+  5% {
+    clip: rect(636px, 350px, 740px, 0px);
+  }
+  10% {
+    clip: rect(285px, 350px, 366px, 0px);
+  }
+  15% {
+    clip: rect(191px, 350px, 291px, 0px);
+  }
+  20% {
+    clip: rect(248px, 350px, 338px, 0px);
+  }
+  25% {
+    clip: rect(638px, 350px, 760px, 0px);
+  }
+  30% {
+    clip: rect(269px, 350px, 554px, 0px);
+  }
+  35% {
+    clip: rect(198px, 350px, 71px, 0px);
+  }
+  40% {
+    clip: rect(186px, 350px, 434px, 0px);
+  }
+  45% {
+    clip: rect(234px, 350px, 243px, 0px);
+  }
+  50% {
+    clip: rect(602px, 350px, 780px, 0px);
+  }
+  55% {
+    clip: rect(119px, 350px, 544px, 0px);
+  }
+  60% {
+    clip: rect(106px, 350px, 199px, 0px);
+  }
+  65% {
+    clip: rect(161px, 350px, 274px, 0px);
+  }
+  70% {
+    clip: rect(120px, 350px, 578px, 0px);
+  }
+  75% {
+    clip: rect(263px, 350px, 479px, 0px);
+  }
+  80% {
+    clip: rect(78px, 350px, 252px, 0px);
+  }
+  85% {
+    clip: rect(635px, 350px, 739px, 0px);
+  }
+  90% {
+    clip: rect(67px, 350px, 470px, 0px);
+  }
+  95% {
+    clip: rect(71px, 350px, 503px, 0px);
+  }
+  100% {
+    clip: rect(183px, 350px, 240px, 0px);
+  }
+}

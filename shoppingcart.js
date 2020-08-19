@@ -144,8 +144,9 @@ for(var i = 0; i < checkoutButton.length; i++){
     button.addEventListener('click', ()=> {
 
         let itemsInCart = localStorage.getItem("cartNumbers");
+        console.log(typeof itemsInCart);
         console.log(itemsInCart);
-        if(itemsInCart = "null"){
+        if(itemsInCart == "null"){
             alert("Nothing in Cart");
         }
         else {

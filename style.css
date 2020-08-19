@@ -198,7 +198,7 @@ ul li a:hover {
 
 
 
-@media all and (max-width: 810px){
+@media all and (max-width: 860px){
   .wrapper {
     margin-top: 80px;
     margin-left: 20%;
@@ -304,6 +304,7 @@ ul li a:hover {
 }
 
 .content .copyright {
+  display: inline-flex;
   position: relative;
   text-decoration: none;
   font-family: Arial;
@@ -315,6 +316,7 @@ ul li a:hover {
   }
 
 .content .glitch {
+  display: inline-flex;
   position: relative;
   text-decoration: none;
   font-family: Arial;

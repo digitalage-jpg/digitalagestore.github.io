@@ -31,7 +31,7 @@ function displayCart() {
 
         totalprice.innerHTML = `
         <div class="totalprice">
-            <h2>TOTAL:$ ${cartCost}.00</h2>
+            <h2>TOTAL: $${cartCost}.00</h2>
         </div>
         `;
     }
@@ -40,13 +40,14 @@ function displayCart() {
 displayCart();
 onLoadCartNumbers();
 
+/*-----------UPDATES NUMBER OF ITEMS IN CART-----------*/
 function onLoadCartNumbers() {
     let productNumber = localStorage.getItem('cartNumbers');
 
     if(productNumber){
         document.querySelector('.cartnum span').textContent = productNumber;
     }
-}
+} //cart icon number
 
 function cartNumbers() {
     let cartItems = localStorage.getItem("productsInCart");
@@ -56,10 +57,10 @@ function cartNumbers() {
         var newInCart = item.inCart
         localStorage.setItem('cartNumbers', newInCart);
     });
+}//local storage count w/ key "cartNumbers"
 
 
-}
-
+/*-----------UPDATES TOTAL IN CART-----------*/
 function totalCost() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
@@ -71,8 +72,11 @@ function totalCost() {
         var price = item.price
         localStorage.setItem('totalCost', price * item.inCart);
     });
-}
+}//local storage count w/ key "totalCost"
 
+
+/*-----------UPDATE QUANTITY IN CART -----------*/
+/*-----------needs fix - updating the qty of one item changes all items -----------*/
 var updateQuantity = document.getElementsByClassName("cart-qty");
 for (var i = 0; i < updateQuantity.length; i++){
     var input = updateQuantity[i];
@@ -103,7 +107,8 @@ for (var i = 0; i < updateQuantity.length; i++){
 }
 
 
-
+/*-----------REMOVE INDIVIDUAL ITEMS IN CART-----------*/
+/*-----------needs fix-----------*/
 var removeCartItemButtons = document.getElementsByClassName('btn-danger')
 for(var i = 0; i < removeCartItemButtons.length; i++){
     var button = removeCartItemButtons[i];
@@ -131,6 +136,8 @@ for(var i = 0; i < removeCartItemButtons.length; i++){
     })
 }
 
+
+/*-----------TO CHECKOUT PAGE (nothing in cart or something)-----------*/
 var checkoutButton = document.getElementsByClassName('checkout')
 for(var i = 0; i < checkoutButton.length; i++){
     var button = checkoutButton[i];

@@ -166,25 +166,44 @@ ul li a:hover {
     width: 35px;
 }
 
+@media screen and (max-width: 1150px){
+  .wrapper {
+    margin-top: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    width: 60%;
+    display: inline-block;
+  }
+  .wrapper2 {
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    width: 60%;
+    display: inline-block;
+  }
+}
+
 
 @media screen and (max-width: 500px){
   .wrapper {
     margin-top: 60px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 20px;
-    width: 70%;
+    width: 80%;
     display: inline-block;
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
   .wrapper2 {
     margin-top: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 20px;
-    width: 70%;
+    width: 80%;
     display: inline-block;
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
 }
 

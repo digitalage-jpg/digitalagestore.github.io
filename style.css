@@ -188,7 +188,7 @@ ul li a:hover {
 }
 
 
-@media screen and (min-width: 100px), (max-width: 650px){
+@media screen and (max-width: 650px){
   .wrapper {
     margin-top: 200px;
     margin-left: 25%;
@@ -220,7 +220,6 @@ ul li a:hover {
     line-height: 70px;
   }
 }
-
 
 .content {
   height: 100%;

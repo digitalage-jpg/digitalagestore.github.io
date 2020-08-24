@@ -219,7 +219,7 @@ ul li ul li a{
     }
 
     .logo{
-        width: 0%;
+        width: 100%;
         padding-left: 1%;
         padding-top: 6px;
         display: inline-block;
@@ -232,10 +232,9 @@ ul li ul li a{
         padding-top: 20px;
     }
 
-
     .menu{
         display: inline-block;
-        width: 100%;
+        width: 50%;
         padding-top: 10px;
         position: relative;
     }
@@ -248,7 +247,7 @@ ul li ul li a{
         display: block;
         width: 100%; 
         margin-top: 14%;
-        background: white;
+        background: #ebebeb;
     }
 
     nav.active ul li {

@@ -266,6 +266,29 @@ ul li ul li a{
         font-size: 70px;
         line-height: 80px;
     }
+
+    .submenu {
+        padding: 0px;
+        background-color: lightgray;
+        margin-top: 7px;
+        padding-right: 20px;
+        text-align: right;
+        width: 100%;
+    }
+    
+    .submenu li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    .submenu li a {
+        text-decoration: none;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: #303030;
+    }
 }
 
 .shoppingicon {

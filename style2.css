@@ -299,7 +299,7 @@ ul li ul li a{
 
 .submenu {
     padding: 0px;
-    background-color: lightgray;
+    background-color: #4dd0e1;
     margin-top: 7px;
     padding-right: 20px;
     text-align: right;
@@ -317,17 +317,17 @@ ul li ul li a{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-weight: 500;
     font-size: 12px;
-    color: #303030;
+    color: #fffbd3;
 }
 
 .submenu li a:hover {
-    color: #2f9688
+    color: #303030
 }
 
 @media screen and (max-width: 1250px){
     .submenu {
         padding: 0px;
-        background-color: lightgray;
+        background-color: #4dd0e1;
         margin-top: 7px;
         padding-right: 20px;
         text-align: right;
@@ -345,7 +345,7 @@ ul li ul li a{
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         font-weight: 500;
         font-size: 32px;
-        color: #303030;
+        color: #fffbd3;
     }
 }
 

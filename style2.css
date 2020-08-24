@@ -212,16 +212,32 @@ ul li ul li a{
 }
 
 @media screen and (max-width: 1250px){
+    .wrapper{
+        margin-top: 25px;
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .logo{
+        width: 0%;
+        padding-left: 1%;
+        padding-top: 6px;
+        display: inline-block;
+        position: relative;
+    }
+
     .img-logo {
         width: 50%;
         padding-left: 20px;
         padding-top: 20px;
     }
 
-    .wrapper{
-        margin-top: 20px;
+
+    .menu{
+        display: inline-block;
         width: 100%;
-        padding-bottom: 10%;
+        padding-top: 10px;
+        position: relative;
     }
 
     nav {
@@ -230,18 +246,14 @@ ul li ul li a{
 
     nav.active{
         display: block;
-        width: 100%;
+        width: 100%; 
         margin-top: 14%;
-        padding-left: 210px;
-        position: fixed;
         background: white;
     }
 
     nav.active ul li {
         list-style: none;
         clear: left;
-        padding-left: 20px;
-        position: relative;
     }
 
     nav.active ul li a {
@@ -254,8 +266,8 @@ ul li ul li a{
     
     .menutoggle {
         display: block;
-        padding-top: 20px;
-        padding-right: 10px ;
+        padding-top: 30px;
+        padding-right: 40px;
         width: 80px;
         height: 80px;
         float: right;

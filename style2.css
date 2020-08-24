@@ -99,12 +99,6 @@ input, select {
     vertical-align:middle;
 }
 
-.wrapper{
-    margin-top: 20px;
-    width: 100%;
-    display: block;
-}
-
 h1 {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-weight: 500;
@@ -150,19 +144,33 @@ h6 {
     line-height: 22px;
 }
 
-.img-logo {
-    width: 200px;
+.wrapper{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    width: 12%;
     padding-left: 1%;
     padding-top: 6px;
-    display: inline-block;
+    display: block;
+    position: relative;
+}
+.menu{
+    display: block;
+    width: 88%;
+    padding-top: 10px;
+    position: relative;
+}
+
+.img-logo {
+    width: 12%;
     position: fixed;
 }
 
 nav {
-    display: inline-block;
-    width: 100%;
-    padding-top: 10px;
-    padding-left: 210px;
+    width: 88%;
     position: fixed;
 }
 

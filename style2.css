@@ -339,7 +339,7 @@ ul li ul li a{
     width: auto;
 }
 
-@media all and (max-width: 1260px){
+@media all and (max-width: 1250px){
     .wrapper3 {
         margin-top: 10px;
         margin-left: 30px;

@@ -6,13 +6,15 @@
         <link rel="icon" type="image/icon type" href="pictures/favicon.png"/>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="main.js" async></script>
     </head>
     <body class="contactus">
         <div class="wrapper">
+            <a href="index.html"><img class="img-logo" src="pictures/blacklogo.png" alt="digital age store"></a>
+            <nav>
             <nav>
                 <ul>
-                    <li><a href="index.html"><img class="img-logo" src="pictures/blacklogo.png" alt="digital age store"></a></li>
                     <li><a href="https://shop.digitalagestore.com/">ONLINE STORE</a> 
                         <!--<ul>
                             <li><a href="#">OUTER</a> </li><br>
@@ -28,6 +30,7 @@
                     <li><a style="color: #f9ab40; text-decoration: line-through;" href="community.html">COMMUNITY</a></li>
                 </ul>
             </nav>
+            <div class="menutoggle"></div>
             <!--<div class="shoppingicon">
                 <ul>
                     <li class="cartnum">
@@ -45,6 +48,14 @@
             <li><a href="faq.html">FAQ</a> </li>
         </div>
         <br>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menutoggle').click(function(){
+                    $('.menutoggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
 
         <div class="wrapper3" >
             <h1 style="text-align: center;"> NOTICE</h1>

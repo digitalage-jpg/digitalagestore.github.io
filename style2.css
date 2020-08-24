@@ -99,11 +99,6 @@ input, select {
     vertical-align:middle;
 }
 
-.img-logo {
-    width: 200px;
-    padding-left: 0px;
-}
-
 .wrapper{
     margin-top: 20px;
     width: 100%;
@@ -154,9 +149,19 @@ h6 {
     line-height: 22px;
 }
 
+.img-logo {
+    width: 200px;
+    padding-left: 1%;
+    padding-top: 6px;
+    display: inline-block;
+    position: fixed;
+}
+
 nav {
+    display: inline-block;
     width: 100%;
     padding-top: 10px;
+    padding-left: 210px;
     position: fixed;
 }
 
@@ -165,7 +170,6 @@ ul li {
     float: left;
     padding-left: 20px;
     position: relative;
-
 }
 
 ul li a {
@@ -196,6 +200,71 @@ ul li ul li a{
     font-weight: 300;
     font-size: 14px;
     color: #303030;
+}
+
+@media screen and (max-width: 1250px){
+    .img-logo {
+        width: 50%;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .wrapper{
+        margin-top: 20px;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active{
+        display: block;
+        width: 100%;
+        margin-top: 14%;
+        padding-left: 210px;
+        position: fixed;
+        background: white;
+    }
+
+    nav.active ul li {
+        list-style: none;
+        clear: left;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    nav.active ul li a {
+        text-decoration: none;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 34px;
+        color: #303030;
+    }
+    
+    .menutoggle {
+        display: block;
+        padding-top: 20px;
+        padding-right: 10px ;
+        width: 80px;
+        height: 80px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .menutoggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .menutoggle.active::before{
+        content: '\f00d';
+        font-family: fontAwesome;
+        font-size: 70px;
+        line-height: 80px;
+    }
 }
 
 .shoppingicon {

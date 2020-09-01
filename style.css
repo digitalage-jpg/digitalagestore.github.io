@@ -168,26 +168,26 @@ ul li a:hover {
 
 @media screen and (max-width: 1250px){
   .wrapper {
-    margin-top: 300px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 25%;
-    width: 50%;
+    margin-top: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 20px;
+    width: 100%;
     display: inline-block;
-    transform: scale(1.5);
+    transform: scale(0.6);
   }
   .wrapper2 {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 20px;
-    width: 50%;
+    margin-left:0%;
+    margin-right: 0%;
+    margin-bottom: 0px;
+    width: 100%;
     display: inline-block;
-    transform: scale(1.5);
+    transform: scale(0.6);
   }
   .sns {
     width: 40px;
-    padding-right: 20px;
-    padding-bottom: 10%;
+    padding-right: 30px;
+    padding-bottom: 0%;
   }
   ul li a {
     text-decoration: none;

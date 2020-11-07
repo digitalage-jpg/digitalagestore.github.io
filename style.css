@@ -110,61 +110,61 @@ input, select {
 }
 
 .img-logo {
-    width: 400px;
+  width: 400px;
 }
 
 h1{
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 20px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 20px;
 }
 
 h2 {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 15px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 15px;
 }
 
 nav {
-    display: inline-block;
-    width: 50%;
-    color: #ffffff;
-    padding-top: 10px;
-    line-height: 38px;
+  display: inline-block;
+  width: 50%;
+  color: #ffffff;
+  padding-top: 10px;
+  line-height: 38px;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 ul li a {
-    text-decoration: none;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-weight: 200;
-    font-size: 16px;
-    color: #ffffff;
+  text-decoration: none;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #ffffff;
 }
 
 ul li a:hover {
-    color: #f9ab40
+  color: #f9ab40
 }
 
 .sns {
-    width: 25px;
-    padding-right: 20px;
+  width: 25px;
+  padding-right: 20px;
 }
 
 .paylist {
-    margin-top: 20px;
-    list-style: none;
-    display: inline-block;
+  margin-top: 20px;
+  list-style: none;
+  display: inline-block;
 }
 
 .paylist li {
-    float: left;
-    padding-right: 10px;
+  float: left;
+  padding-right: 10px;
 }
 
 .payicon {
-    width: 35px;
+  width: 35px;
 }
 
 @media screen and (max-width: 1250px){
